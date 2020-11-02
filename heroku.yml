@@ -1,7 +1,7 @@
     build:
 
         docker:
-            web: ./app/Dockerfile
+            web: app/Dockerfile
     run:
         web: gunicorn clg.wsgi:application --bind 0.0.0.0:$PORT
     release:
